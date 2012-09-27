@@ -1,0 +1,5 @@
+C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseChatModel\bin\Debug\WiseChatModel.dll
+C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseChatModel\bin\Debug\WiseChatModel.pdb
+C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseChatModel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseChatModel\obj\Debug\WiseChatModel.dll
+C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseChatModel\obj\Debug\WiseChatModel.pdb

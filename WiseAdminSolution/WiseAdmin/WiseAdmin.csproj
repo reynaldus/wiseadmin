@@ -1,0 +1,990 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F445DD51-5156-4C9E-92AF-1C9FA2576AE7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WiseAdmin</RootNamespace>
+    <AssemblyName>WiseAdmin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="scripts\ajax\ScriptMaster.js" />
+    <Content Include="scripts\grid\css\demo_page.css" />
+    <Content Include="scripts\grid\css\demo_table.css" />
+    <Content Include="scripts\grid\css\demo_table_jui.css" />
+    <Content Include="scripts\grid\css\jquery.dataTables.css" />
+    <Content Include="scripts\grid\css\jquery.dataTables_themeroller.css" />
+    <Content Include="scripts\grid\images\back_disabled.png" />
+    <Content Include="scripts\grid\images\back_enabled.png" />
+    <Content Include="scripts\grid\images\back_enabled_hover.png" />
+    <Content Include="scripts\grid\images\favicon.ico" />
+    <Content Include="scripts\grid\images\forward_disabled.png" />
+    <Content Include="scripts\grid\images\forward_enabled.png" />
+    <Content Include="scripts\grid\images\forward_enabled_hover.png" />
+    <Content Include="scripts\grid\images\sort_asc.png" />
+    <Content Include="scripts\grid\images\sort_asc_disabled.png" />
+    <Content Include="scripts\grid\images\sort_both.png" />
+    <Content Include="scripts\grid\images\sort_desc.png" />
+    <Content Include="scripts\grid\images\sort_desc_disabled.png" />
+    <Content Include="scripts\grid\js\jquery.dataTables.js" />
+    <Content Include="scripts\grid\js\jquery.dataTables.min.js" />
+    <Content Include="scripts\grid\js\jquery.js" />
+    <Content Include="scripts\grid\src\api\api.internal.js" />
+    <Content Include="scripts\grid\src\api\api.methods.js" />
+    <Content Include="scripts\grid\src\api\api.static.js" />
+    <Content Include="scripts\grid\src\core\core.ajax.js" />
+    <Content Include="scripts\grid\src\core\core.columns.js" />
+    <Content Include="scripts\grid\src\core\core.constructor.js" />
+    <Content Include="scripts\grid\src\core\core.data.js" />
+    <Content Include="scripts\grid\src\core\core.draw.js" />
+    <Content Include="scripts\grid\src\core\core.filter.js" />
+    <Content Include="scripts\grid\src\core\core.info.js" />
+    <Content Include="scripts\grid\src\core\core.init.js" />
+    <Content Include="scripts\grid\src\core\core.length.js" />
+    <Content Include="scripts\grid\src\core\core.page.js" />
+    <Content Include="scripts\grid\src\core\core.processing.js" />
+    <Content Include="scripts\grid\src\core\core.scrolling.js" />
+    <Content Include="scripts\grid\src\core\core.sizing.js" />
+    <Content Include="scripts\grid\src\core\core.sort.js" />
+    <Content Include="scripts\grid\src\core\core.state.js" />
+    <Content Include="scripts\grid\src\core\core.support.js" />
+    <Content Include="scripts\grid\src\DataTables.js" />
+    <Content Include="scripts\grid\src\ext\ext.classes.js" />
+    <Content Include="scripts\grid\src\ext\ext.paging.js" />
+    <Content Include="scripts\grid\src\ext\ext.sorting.js" />
+    <Content Include="scripts\grid\src\ext\ext.types.js" />
+    <Content Include="scripts\grid\src\model\model.column.js" />
+    <Content Include="scripts\grid\src\model\model.defaults.columns.js" />
+    <Content Include="scripts\grid\src\model\model.defaults.js" />
+    <Content Include="scripts\grid\src\model\model.ext.js" />
+    <Content Include="scripts\grid\src\model\model.row.js" />
+    <Content Include="scripts\grid\src\model\model.search.js" />
+    <Content Include="scripts\grid\src\model\model.settings.js" />
+    <Content Include="scripts\grid\unit_testing\controller.js" />
+    <Content Include="scripts\grid\unit_testing\index.html" />
+    <Content Include="scripts\grid\unit_testing\performance\draw.html" />
+    <Content Include="scripts\grid\unit_testing\performance\page.html" />
+    <Content Include="scripts\grid\unit_testing\performance\sort.html" />
+    <Content Include="scripts\grid\unit_testing\tests\1_dom\_zero_config.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\-complex_header.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\-iDraw.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\2512.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\2530-2.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\2530.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\2569.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\2600.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\2608.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\2635.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\2746-stable-sort.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\2799.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\2840-restore-table-width.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\2914-state-save-sort.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\5396-fnUpdate-arrays.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\5508-xscroll-zero-content.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\6776-scrolling-table-grows.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\aaSorting.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\aaSortingFixed.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\aoColumns.bSearchable.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\aoColumns.bSortable.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\aoColumns.bUseRendered.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\aoColumns.bVisible.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\aoColumns.bVisible2.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\aoColumns.fnRender.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\aoColumns.iDataSort.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\aoColumns.sClass.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\aoColumns.sName.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\aoColumns.sTitle.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\aoColumns.sWidth.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\aoSearchCols.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\asStripClasses.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\bAutoWidth.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\bFilter.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\bInfiniteScroll.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\bInfo.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\bJQueryUI.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\bLengthChange.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\bPaginate.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\bProcessing.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\bServerSide.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\bSort.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\bSortCellsTop.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\bSortClasses.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\fnCookieCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\fnCreatedCell.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\fnCreatedRow.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\fnDeleteRow.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\fnDrawCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\fnFilter.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\fnFooterCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\fnHeaderCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\fnInfoCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\fnInitComplete.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\fnRowCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\fnSetColumnVis.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\fnSetColumnVis2.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\html-autodetect-sort.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\iDisplayLength.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\oLanguage.oPaginate.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\oLanguage.sInfo.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\oLanguage.sInfoEmpty.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\oLanguage.sInfoPostFix.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\oLanguage.sLengthMenu.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\oLanguage.sProcessing.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\oLanguage.sSearch.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\oLanguage.sUrl.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\oLanguage.sZeroRecords.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\oSearch.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\sAjaxSource.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\sDom.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\sPaginationType.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\sScrollXY.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\th_in_body.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\1_dom\_zero_config.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\6872-default-content-missing-props.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\8549--string-sorting-nonstrings.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\aaSorting.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\aaSortingFixed.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\aoColumns.bSearchable.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\aoColumns.bSortable.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\aoColumns.bUseRendered.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\aoColumns.bVisible.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\aoColumns.fnRender.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\aoColumns.iDataSort.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\aoColumns.sClass.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\aoColumns.sName.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\aoColumns.sTitle.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\aoColumns.sWidth.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\aoSearchCols.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\asStripClasses.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\bAutoWidth.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\bFilter.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\bInfo.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\bLengthChange.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\bPaginate.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\bProcessing.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\bServerSide.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\bSort.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\bSortClasses.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\fnCreatedCell.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\fnCreatedRow.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\fnDrawCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\fnFooterCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\fnHeaderCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\fnInitComplete.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\fnRowCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\iDisplayLength.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\js_data_mixed_types.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\oLanguage.oPaginate.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\oLanguage.sInfo.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\oLanguage.sInfoEmpty.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\oLanguage.sInfoPostFix.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\oLanguage.sLengthMenu.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\oLanguage.sProcessing.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\oLanguage.sSearch.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\oLanguage.sUrl.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\oLanguage.sZeroRecords.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\oSearch.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\sAjaxSource.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\sDom.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\sPaginationType.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\2_js\_zero_config.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\aaSorting.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\aaSortingFixed.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\aoColumns.bSearchable.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\aoColumns.bSortable.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\aoColumns.bUseRendered.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\aoColumns.bVisible.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\aoColumns.fnRender.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\aoColumns.iDataSort.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\aoColumns.sClass.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\aoColumns.sName.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\aoColumns.sTitle.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\aoColumns.sWidth.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\aoSearchCols.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\asStripClasses.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\bAutoWidth.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\bFilter.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\bInfo.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\bLengthChange.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\bPaginate.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\bProcessing.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\bServerSide.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\bSort.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\bSortClasses.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\fnCreatedCell.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\fnCreatedRow.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\fnDrawCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\fnHeaderCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\fnInitComplete.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\fnRowCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\fnServerData.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\iDisplayLength.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\oLanguage.oPaginate.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\oLanguage.sInfo.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\oLanguage.sInfoEmpty.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\oLanguage.sInfoPostFix.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\oLanguage.sLengthMenu.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\oLanguage.sLoadingRecords.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\oLanguage.sProcessing.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\oLanguage.sSearch.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\oLanguage.sUrl.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\oLanguage.sZeroRecords.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\oSearch.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\sAjaxDataProp.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\sAjaxDataProp2.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\sAjaxSource.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\sDom.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\sPaginationType.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\3_ajax\_zero_config.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\-iDraw.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\2440.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\2569.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\2600.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\aaSorting.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\aaSortingFixed.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\aoColumns.bSearchable.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\aoColumns.bSortable.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\aoColumns.bUseRendered.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\aoColumns.bVisible.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\aoColumns.fnRender.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\aoColumns.sClass.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\aoColumns.sName.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\aoColumns.sTitle.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\aoColumns.sWidth.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\aoSearchCols.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\asStripClasses.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\bAutoWidth.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\bFilter.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\bInfiniteScroll.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\bInfo.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\bLengthChange.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\bPaginate.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\bProcessing.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\bServerSide.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\bSort.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\bSortClasses.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\fnCreatedCell.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\fnCreatedRow.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\fnDrawCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\fnHeaderCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\fnInitComplete.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\fnRowCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\iDeferLoading.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\iDisplayLength.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\oLanguage.oPaginate.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\oLanguage.sInfo.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\oLanguage.sInfoEmpty.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\oLanguage.sInfoPostFix.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\oLanguage.sLengthMenu.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\oLanguage.sProcessing.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\oLanguage.sSearch.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\oLanguage.sUrl.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\oLanguage.sZeroRecords.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\oSearch.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\sAjaxDataProp.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\sAjaxSource.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\sDom.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\sPaginationType.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\4_server-side\_zero_config.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\aaSorting.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\aaSortingFixed.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\aoColumns.bSearchable.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\aoColumns.bSortable.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\aoColumns.bUseRendered.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\aoColumns.bVisible.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\aoColumns.fnRender.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\aoColumns.iDataSort.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\aoColumns.sClass.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\aoColumns.sName.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\aoColumns.sTitle.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\aoColumns.sWidth.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\aoSearchCols.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\asStripClasses.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\bAutoWidth.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\bFilter.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\bInfo.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\bLengthChange.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\bPaginate.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\bProcessing.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\bServerSide.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\bSort.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\bSortClasses.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\fnDrawCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\fnHeaderCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\fnInitComplete.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\fnRowCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\fnServerData.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\iDisplayLength.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\oLanguage.oPaginate.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\oLanguage.sInfo.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\oLanguage.sInfoEmpty.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\oLanguage.sInfoPostFix.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\oLanguage.sLengthMenu.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\oLanguage.sProcessing.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\oLanguage.sSearch.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\oLanguage.sUrl.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\oLanguage.sZeroRecords.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\oSearch.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\sAjaxSource.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\sDom.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\sPaginationType.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\_zero_config.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\_zero_config_arrays_subobjects.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\_zero_config_deep.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\_zero_config_null_source.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\_zero_config_objects.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\5_ajax_objects\_zero_config_objects_subarrays.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\aaSorting.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\aaSortingFixed.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\aoColumns.bSearchable.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\aoColumns.bSortable.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\aoColumns.bUseRendered.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\aoColumns.bVisible.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\aoColumns.fnRender.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\aoColumns.iDataSort.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\aoColumns.sClass.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\aoColumns.sName.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\aoColumns.sTitle.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\aoColumns.sWidth.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\aoSearchCols.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\asStripClasses.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\bAutoWidth.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\bFilter.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\bInfo.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\bLengthChange.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\bPaginate.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\bProcessing.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\bServerSide.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\bSort.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\bSortClasses.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\fnDrawCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\fnHeaderCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\fnInitComplete.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\fnRowCallback.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\fnServerData.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\iDisplayLength.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\oLanguage.oPaginate.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\oLanguage.sInfo.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\oLanguage.sInfoEmpty.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\oLanguage.sInfoPostFix.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\oLanguage.sLengthMenu.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\oLanguage.sProcessing.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\oLanguage.sSearch.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\oLanguage.sUrl.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\oLanguage.sZeroRecords.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\oSearch.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\sAjaxDataProp.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\sAjaxDataProp2.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\sAjaxSource.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\sDom.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\sPaginationType.js" />
+    <Content Include="scripts\grid\unit_testing\tests_onhold\6_delayed_rendering\_zero_config.js" />
+    <Content Include="scripts\grid\unit_testing\unit_test.js" />
+    <Content Include="scripts\jquery-1.8.2.min.js" />
+    <Content Include="scripts\jqueryui\css\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="scripts\jqueryui\css\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="scripts\jqueryui\css\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="scripts\jqueryui\css\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="scripts\jqueryui\css\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="scripts\jqueryui\css\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="scripts\jqueryui\css\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="scripts\jqueryui\css\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="scripts\jqueryui\css\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="scripts\jqueryui\css\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="scripts\jqueryui\css\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="scripts\jqueryui\css\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="scripts\jqueryui\css\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="scripts\jqueryui\css\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="scripts\jqueryui\css\cupertino\jquery-ui-1.8.23.custom.css" />
+    <Content Include="scripts\jqueryui\development-bundle\AUTHORS.txt" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\accordion\collapsible.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\accordion\custom-icons.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\accordion\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\accordion\fillspace.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\accordion\hoverintent.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\accordion\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\accordion\mouseover.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\accordion\no-auto-height.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\accordion\sortable.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\addClass\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\addClass\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\animate\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\animate\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\categories.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\combobox.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\custom-data.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\folding.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\images\jqueryui_32x32.png" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\images\jquery_32x32.png" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\images\sizzlejs_32x32.png" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\images\transparent_1x1.png" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\images\ui-anim_basic_16x16.gif" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\london.xml" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\maxheight.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\multiple-remote.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\multiple.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\remote-jsonp.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\remote-with-cache.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\remote.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\autocomplete\xml.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\button\checkbox.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\button\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\button\icons.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\button\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\button\radio.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\button\splitbutton.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\button\toolbar.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\alt-field.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\animation.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\buttonbar.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\date-formats.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\date-range.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\dropdown-month-year.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\icon-trigger.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\images\calendar.gif" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\inline.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\localization.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\min-max.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\multiple-calendars.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\other-months.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\datepicker\show-week.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\demos.css" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\dialog\animated.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\dialog\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\dialog\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\dialog\modal-confirmation.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\dialog\modal-form.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\dialog\modal-message.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\dialog\modal.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\draggable\constrain-movement.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\draggable\cursor-style.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\draggable\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\draggable\delay-start.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\draggable\events.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\draggable\handle.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\draggable\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\draggable\revert.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\draggable\scroll.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\draggable\snap-to.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\draggable\sortable.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\draggable\visual-feedback.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\accepted-elements.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\images\high_tatras.jpg" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\images\high_tatras2.jpg" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\images\high_tatras2_min.jpg" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\images\high_tatras3.jpg" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\images\high_tatras3_min.jpg" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\images\high_tatras4.jpg" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\images\high_tatras4_min.jpg" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\images\high_tatras_min.jpg" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\photo-manager.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\propagation.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\revert.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\shopping-cart.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\droppable\visual-feedback.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\effect\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\effect\easing.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\effect\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\hide\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\hide\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\images\calendar.gif" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\images\demo-config-on-tile.gif" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\images\demo-config-on.gif" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\images\demo-spindown-closed.gif" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\images\demo-spindown-open.gif" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\images\icon-docs-info.gif" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\images\pbar-ani.gif" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\position\cycler.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\position\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\position\images\earth.jpg" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\position\images\flight.jpg" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\position\images\rocket.jpg" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\position\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\progressbar\animated.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\progressbar\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\progressbar\images\pbar-ani.gif" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\progressbar\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\progressbar\resize.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\removeClass\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\removeClass\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\resizable\animate.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\resizable\aspect-ratio.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\resizable\constrain-area.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\resizable\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\resizable\delay-start.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\resizable\helper.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\resizable\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\resizable\max-min.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\resizable\snap-to-grid.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\resizable\synchronous-resize.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\resizable\textarea.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\resizable\visual-feedback.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\selectable\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\selectable\display-grid.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\selectable\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\selectable\serialize.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\show\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\show\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\slider\colorpicker.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\slider\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\slider\hotelrooms.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\slider\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\slider\multiple-vertical.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\slider\range-vertical.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\slider\range.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\slider\rangemax.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\slider\rangemin.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\slider\side-scroll.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\slider\slider-vertical.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\slider\steps.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\slider\tabs.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\sortable\connect-lists-through-tabs.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\sortable\connect-lists.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\sortable\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\sortable\delay-start.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\sortable\display-grid.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\sortable\empty-lists.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\sortable\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\sortable\items.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\sortable\placeholder.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\sortable\portlets.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\switchClass\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\switchClass\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\tabs\ajax.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\tabs\ajax\content1.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\tabs\ajax\content2.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\tabs\bottom.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\tabs\collapsible.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\tabs\cookie.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\tabs\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\tabs\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\tabs\manipulation.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\tabs\mouseover.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\tabs\sortable.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\tabs\vertical.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\toggleClass\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\toggleClass\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\toggle\default.html" />
+    <Content Include="scripts\jqueryui\development-bundle\demos\toggle\index.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\accordion.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\addClass.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\animate.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\autocomplete.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\button.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\datepicker.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\dialog.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\draggable.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\droppable.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\effect.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\hide.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\position.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\progressbar.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\removeClass.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\resizable.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\selectable.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\show.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\slider.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\sortable.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\switchClass.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\tabs.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\toggle.html" />
+    <Content Include="scripts\jqueryui\development-bundle\docs\toggleClass.html" />
+    <Content Include="scripts\jqueryui\development-bundle\external\jquery.bgiframe-2.1.2.js" />
+    <Content Include="scripts\jqueryui\development-bundle\external\jquery.cookie.js" />
+    <Content Include="scripts\jqueryui\development-bundle\external\jquery.metadata.js" />
+    <Content Include="scripts\jqueryui\development-bundle\external\qunit.css" />
+    <Content Include="scripts\jqueryui\development-bundle\external\qunit.js" />
+    <Content Include="scripts\jqueryui\development-bundle\GPL-LICENSE.txt" />
+    <Content Include="scripts\jqueryui\development-bundle\jquery-1.8.0.js" />
+    <Content Include="scripts\jqueryui\development-bundle\MIT-LICENSE.txt" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\jquery.ui.accordion.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\jquery.ui.all.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\jquery.ui.base.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\jquery.ui.button.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\jquery.ui.core.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\jquery.ui.dialog.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\jquery.ui.resizable.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\jquery.ui.selectable.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\jquery.ui.slider.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\jquery.ui.tabs.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\base\jquery.ui.theme.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery-ui-1.8.23.custom.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery.ui.accordion.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery.ui.all.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery.ui.autocomplete.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery.ui.base.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery.ui.button.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery.ui.core.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery.ui.datepicker.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery.ui.dialog.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery.ui.progressbar.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery.ui.resizable.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery.ui.selectable.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery.ui.slider.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery.ui.tabs.css" />
+    <Content Include="scripts\jqueryui\development-bundle\themes\cupertino\jquery.ui.theme.css" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery-ui-i18n.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-af.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-ar-DZ.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-ar.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-az.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-bg.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-bs.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-ca.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-cs.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-cy-GB.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-da.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-de.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-el.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-en-AU.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-en-GB.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-en-NZ.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-eo.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-es.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-et.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-eu.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-fa.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-fi.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-fo.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-fr-CH.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-fr.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-gl.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-he.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-hi.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-hr.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-hu.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-hy.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-id.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-is.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-it.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-ja.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-ka.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-kk.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-km.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-ko.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-lb.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-lt.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-lv.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-mk.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-ml.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-ms.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-nl-BE.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-nl.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-no.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-pl.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-pt.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-rm.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-ro.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-ru.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-sk.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-sl.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-sq.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-sr-SR.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-sr.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-sv.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-ta.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-th.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-tj.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-tr.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-uk.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-vi.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-zh-CN.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-zh-HK.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\i18n\jquery.ui.datepicker-zh-TW.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery-ui-1.8.23.custom.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.effects.blind.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.effects.bounce.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.effects.clip.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.effects.core.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.effects.drop.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.effects.explode.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.effects.fade.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.effects.fold.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.effects.highlight.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.effects.pulsate.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.effects.scale.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.effects.shake.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.effects.slide.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.effects.transfer.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.accordion.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.autocomplete.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.button.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.core.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.datepicker.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.dialog.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.draggable.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.droppable.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.mouse.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.position.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.progressbar.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.resizable.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.selectable.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.slider.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.sortable.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.tabs.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\jquery.ui.widget.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.effects.blind.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.effects.bounce.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.effects.clip.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.effects.core.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.effects.drop.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.effects.explode.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.effects.fade.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.effects.fold.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.effects.highlight.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.effects.pulsate.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.effects.scale.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.effects.shake.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.effects.slide.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.effects.transfer.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.accordion.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.autocomplete.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.button.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.core.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.datepicker.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.dialog.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.draggable.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.droppable.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.mouse.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.position.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.progressbar.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.resizable.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.selectable.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.slider.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.sortable.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.tabs.min.js" />
+    <Content Include="scripts\jqueryui\development-bundle\ui\minified\jquery.ui.widget.min.js" />
+    <Content Include="scripts\jqueryui\index.html" />
+    <Content Include="scripts\jqueryui\js\jquery-1.8.0.min.js" />
+    <Content Include="scripts\jqueryui\js\jquery-ui-1.8.23.custom.min.js" />
+    <Content Include="styles\botoes.css" />
+    <Content Include="styles\divs.css" />
+    <Content Include="styles\menu.css" />
+    <Content Include="styles\textos.css" />
+    <Content Include="styles\wise.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WiseHelp\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\Ajax.ashx.cs">
+      <DependentUpon>Ajax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\classes\Worker.cs" />
+    <Compile Include="handlers\Logon.ashx.cs">
+      <DependentUpon>Logon.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WiseHelp\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WiseHelp\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WiseHelp\WiseHelp.master.cs">
+      <DependentUpon>WiseHelp.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WiseHelp\WiseHelp.master.designer.cs">
+      <DependentUpon>WiseHelp.master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ascx\" />
+    <Folder Include="pages\" />
+    <Folder Include="WiseChat\" />
+    <Folder Include="WiseControl\" />
+    <Folder Include="WiseRemote\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="handlers\Ajax.ashx" />
+    <Content Include="handlers\Logon.ashx" />
+    <None Include="scripts\grid\images\Sorting icons.psd" />
+    <None Include="scripts\grid\unit_testing\controller.php" />
+    <None Include="scripts\grid\unit_testing\performance\large.php" />
+    <None Include="scripts\grid\unit_testing\templates\-complex_header.php" />
+    <None Include="scripts\grid\unit_testing\templates\2512.php" />
+    <None Include="scripts\grid\unit_testing\templates\6776.php" />
+    <None Include="scripts\grid\unit_testing\templates\complex_header_2.php" />
+    <None Include="scripts\grid\unit_testing\templates\deferred_table.php" />
+    <None Include="scripts\grid\unit_testing\templates\dom_data.php" />
+    <None Include="scripts\grid\unit_testing\templates\dom_data_th.php" />
+    <None Include="scripts\grid\unit_testing\templates\dom_data_two_headers.php" />
+    <None Include="scripts\grid\unit_testing\templates\dymanic_table.php" />
+    <None Include="scripts\grid\unit_testing\templates\empty_table.php" />
+    <None Include="scripts\grid\unit_testing\templates\html_table.php" />
+    <None Include="scripts\grid\unit_testing\templates\js_data.php" />
+    <None Include="scripts\grid\unit_testing\templates\js_data_mixed_types.php" />
+    <None Include="scripts\grid\unit_testing\templates\two_tables.php" />
+    <None Include="scripts\jqueryui\development-bundle\demos\autocomplete\search.php" />
+    <None Include="scripts\jqueryui\development-bundle\demos\tabs\ajax\content3-slow.php" />
+    <None Include="scripts\jqueryui\development-bundle\demos\tabs\ajax\content4-broken.php" />
+    <None Include="scripts\jqueryui\development-bundle\package.json" />
+    <None Include="styles\fontes\bauserif.ttf" />
+    <Content Include="WiseHelp\WiseHelp.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControllerMaster\ControllerMaster.csproj">
+      <Project>{3DC3E909-81F2-484E-BB0B-57A830BAC02A}</Project>
+      <Name>ControllerMaster</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Misc\Misc.vbproj">
+      <Project>{A154B741-C18F-4EA6-A8E7-D7ED75868488}</Project>
+      <Name>Misc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WiseHelpController\WiseHelpController.csproj">
+      <Project>{D702BC20-E586-4B05-A172-4FA30855E2FE}</Project>
+      <Name>WiseHelpController</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51852</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

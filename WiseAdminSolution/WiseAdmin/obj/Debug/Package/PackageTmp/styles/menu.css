@@ -1,0 +1,23 @@
+﻿#bsMenu{
+	
+    margin-top:10px;
+    margin-left:6px;
+    width:950px;
+}
+
+#bsMenu ul{
+	padding:0;
+}
+
+#bsMenu li{
+	float: left;
+	list-style:none;
+}
+
+#bsMenu li a{
+	text-align: center;
+	text-decoration: none;
+	display:block;
+	width: 100px;
+	margin: 0 5px 0 5px;
+}

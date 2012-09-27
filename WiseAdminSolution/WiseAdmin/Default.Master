@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="WiseAdmin.Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <link href="styles/wise.css" rel="Stylesheet" />
+        <link href="styles/menu.css" rel="Stylesheet" />
+            <link href="styles/botoes.css" rel="Stylesheet" />
+                <link href="styles/divs.css" rel="Stylesheet" />
+    <script src="scripts/jquery-1.8.2.min.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="frmMaster" runat="server">
+    
+    <div class="tudo">
+        <div class="boxAzul2">
+            <h1><asp:Label runat="server" ID="lblTitulo"  Text="Wise Admin"  CssClass="TituloSistema"></asp:Label></h1>
+        </div>
+        <div id="bsMenu">
+            <ul>
+                <li> 
+                    <asp:Button runat="server" ID="btnWiseHelp"  CssClass="btnPadraoAzul" 
+                        Width="150" Height="40"
+                Text="Wise Help" Font-Size="Medium" onclick="btnWiseHelp_Click" /></li>
+                 <li> <asp:Button runat="server" ID="btnWiseControl"  CssClass="btnPadraoAzul" Width="150" Height="40"
+                Text="Wise Control" Font-Size="Medium" /></li>
+                 <li> <asp:Button runat="server" ID="btnWiseRemote"  CssClass="btnPadraoAzul" Width="150" Height="40"
+                Text="Wise Remote" Font-Size="Medium" /></li>
+                 <li> <asp:Button runat="server" ID="btnWiseChat"  CssClass="btnPadraoAzul" Width="150" Height="40"
+                Text="Wise Chat" Font-Size="Medium" /></li>
+                <li> <asp:Button runat="server" ID="btnLogOut"  CssClass="btnPadraoAzul" 
+                        Width="150" Height="40"
+                Text="Logout" Font-Size="Medium" onclick="btnLogOut_Click" /></li>
+            </ul>
+        
+        </div>
+        <div class="corpo">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

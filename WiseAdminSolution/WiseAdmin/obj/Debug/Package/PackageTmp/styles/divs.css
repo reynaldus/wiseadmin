@@ -1,0 +1,41 @@
+﻿.login{
+    margin:auto;
+    width:650px;
+    height:200px;
+    margin-top:80px;
+}
+.dvCampos{
+	float: left;
+	width: 310px;
+	height: 25px;
+	margin: 0 10px 0 0;    
+	padding: 5px 5px;
+    padding-top:10px;
+    margin-left:150px;
+    
+
+
+}
+.dvCampos label{
+        float: left;
+        font-size:30px;
+        color:#4682B4;
+
+}
+input{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius:10px;
+        border-bottom-right-radius:10px;
+        padding-left:5px;
+        font-family:Bauserif,Comic Sans MS,Arial,Garamond;  
+}
+.dvCampos input{
+    float:right;
+    height:30px;
+	width: 200px;
+    font-size:20px;
+    
+
+
+}

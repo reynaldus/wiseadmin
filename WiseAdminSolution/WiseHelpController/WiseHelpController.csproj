@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D702BC20-E586-4B05-A172-4FA30855E2FE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WiseHelpController</RootNamespace>
+    <AssemblyName>WiseHelpController</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcoesAdmSLATO.cs" />
+    <Compile Include="AcoesAdmTO.cs" />
+    <Compile Include="AnalistaTO.cs" />
+    <Compile Include="DepartamentoTO.cs" />
+    <Compile Include="PessoaTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SLATO.cs" />
+    <Compile Include="TipoProblemaTO.cs" />
+    <Compile Include="UsuarioTO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControllerMaster\ControllerMaster.csproj">
+      <Project>{3DC3E909-81F2-484E-BB0B-57A830BAC02A}</Project>
+      <Name>ControllerMaster</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAOMaster\DAOMaster.csproj">
+      <Project>{876E6139-6D93-4120-A0F0-A640980F5F76}</Project>
+      <Name>DAOMaster</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WiseControlModel\WiseControlModel.csproj">
+      <Project>{F7930632-BDB8-445D-8181-68B77180857E}</Project>
+      <Name>WiseControlModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WiseHelpModel\WiseHelpModel.csproj">
+      <Project>{E95FC657-80CF-4614-AEC0-0D3580A3714F}</Project>
+      <Name>WiseHelpModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
