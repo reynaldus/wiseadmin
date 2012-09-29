@@ -14,9 +14,11 @@ namespace WiseControlController
 
         #region "Atributos"
         private int _codigoreqcomponentes;
-        private int _requisito;
-        private int _componente;
         private ReqComponentesDAO _dao;
+        
+        private RequisitosMinimosTO _requisitomini;
+        private ComponentesTO _componente;
+        
         #endregion
 
         #region "GETTERS E SETTERS"
@@ -26,16 +28,16 @@ namespace WiseControlController
             get { return this._codigoreqcomponentes; }
             set { this._codigoreqcomponentes = value; }
         }
-        public int Requisito
+        public RequisitosMinimosTO Requisito
         {
-            get { return this._requisito; }
-            set { this._requisito = value; }
+            get { return this._requisitomini; }
+            set { this._requisitomini = value; }
 
         }
 
-        public int Componente
+        public ComponentesTO Componente
         {
-            get { return this.Componente; }
+            get { return this._componente; }
             set { this._componente = value; }
 
         }
@@ -53,7 +55,7 @@ namespace WiseControlController
                 dt = new System.Data.DataTable();
 
                 //BUSCO DADOS NA DAO
-                dt = _dao.GerenciaReqComponentes(this.CodigoReqComponentes, this.Requisito, this.Componente, acao, ConnectionString);
+                dt = _dao.GerenciaReqComponentes(this._codigoreqcomponentes, this._requisitomini.CodigoReq, this._componente.CodigoComp, acao, ConnectionString);
 
                 //VERIFICO SE NÃO VOLTOU NULO
                 if (!(dt == null))
@@ -73,8 +75,15 @@ namespace WiseControlController
 
                                 ReqComponentesTO item = new ReqComponentesTO(false);
                                 item.CodigoReqComponentes = int.Parse(dt.Rows[x]["CODIGOREQ_COMPONENTES"].ToString());
-                                item.Requisito = int.Parse(dt.Rows[x]["REQUISITO"].ToString());
-                                item.Componente = int.Parse(dt.Rows[x]["COMPONENTE"].ToString());
+
+                                // RequisitoMinimoTO
+                                item._requisitomini.CodigoReq = int.Parse(dt.Rows[x]["CODIGOREQ"].ToString());
+                                item._requisitomini.Componentes = dt.Rows[x]["COMPONENTES"].ToString();
+
+                                //ComponentesTO
+
+
+                                                          
                                 lista_dados.Add(item);
 
 

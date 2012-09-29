@@ -13,7 +13,7 @@ namespace WiseHelpModel
     {
         #region "Métodos"
 
-        public DataTable GerenciaTipoProblema(int codigo, string descr, int sla, int departamento, int acao, String ConnectionString)
+        public DataTable GerenciaTipoProblema(int codigo, String descr, int sla, int departamento, int acao, String ConnectionString)
         {
             try 
             	{
@@ -24,7 +24,7 @@ namespace WiseHelpModel
                     parametros.Add(new Parametro("@SLA", sla));
                     parametros.Add(new Parametro("@DEPARTAMENTO", departamento));
 
-                    return DAO.Execute(parametros, "SP_Gerencia_TipoProblema", ConnectionString, getTimeOut(acao));    
+                    return DAO.Execute(parametros, "SP_Gerencia_TipoProblema", ConnectionString, DAOMaster.DAOMaster.getTimeOut(acao));    
 		
             	}
 	        catch (Exception ex)
@@ -34,6 +34,8 @@ namespace WiseHelpModel
 	            }
         }
 
+
         #endregion
     }
-    }
+
+}

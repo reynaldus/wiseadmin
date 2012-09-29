@@ -11,8 +11,7 @@ namespace WiseControlModel
    public class CategoriasSwDAO:DAOMaster.DAOMaster
     {
         #region "Métodos"
-        
-        
+    
         public DataTable GerenciaCategoriasSW(int codigocatsw, int nomecatsw, int acao, String ConnectionString)
         {
             try

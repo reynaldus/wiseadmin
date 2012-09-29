@@ -11,12 +11,12 @@ namespace WiseHelpModel
    public class AcoesAdmDAO:DAOMaster.DAOMaster
    {
        #region "Métodos"
-       public DataTable GerenciaAcoesAdm(int codigoAcaoAdm, String descricao, int acao, String ConnectionString)
+       public DataTable GerenciaAcoesAdm(int codigoacaoadm, String descricao, int acao, String ConnectionString)
        {
            try
            {
                parametros = new List<Parametro>();
-               parametros.Add(new Parametro("@CODIGO", codigoAcaoAdm));
+               parametros.Add(new Parametro("@CODIGO", codigoacaoadm));
                parametros.Add(new Parametro("@DESCR",descricao));
                parametros.Add(new Parametro("@ACAO",acao));
 

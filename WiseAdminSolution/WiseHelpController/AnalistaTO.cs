@@ -7,12 +7,12 @@ using WiseHelpModel;
 using ControllerMaster;
 namespace WiseHelpController
 {
-    public class AnalistaTO:PessoaTO
+    public class AnalistasTO : PessoasTO
     {
         #region "Atributos"
         private int _codigoanalista;
         private String _cargo;
-        private AnalistaDAO _analistadao;
+        private AnalistasDAO _analistadao;
         #endregion
         #region "GETTERS E SETTERS"
         public int CodigoAnalista
@@ -46,7 +46,7 @@ namespace WiseHelpController
                         {
                             for (int x = 0; x < dt.Rows.Count; x++)
                             {
-                                AnalistaTO item = new AnalistaTO(false, false, true);
+                                AnalistasTO item = new AnalistasTO(false, false, true);
                                 item.Codigo = int.Parse(dt.Rows[x]["CODIGOUSUARIO"].ToString());
                                 item.Cargo = dt.Rows[x]["CARGO"].ToString();
                                 item.Nome = dt.Rows[x]["NOME"].ToString();
@@ -54,7 +54,7 @@ namespace WiseHelpController
                                 item.Ramal = int.Parse(dt.Rows[x]["RAMAL"].ToString());
                                 item.DataNascimento = DateTime.Parse(dt.Rows[x]["DTNASC"].ToString());
                                 lista_dados.Add(item);
-                                   
+
                             }
                         }
                     }
@@ -63,18 +63,19 @@ namespace WiseHelpController
             }
             catch (Exception ex)
             {
-                
+
                 throw ex;
             }
         }
 
         #endregion
         #region "Construtores"
-        public AnalistaTO(bool ConBDAnalista,bool ConBDPessoa, bool instanciaoutros):base(ConBDPessoa,instanciaoutros)
+        public AnalistasTO(bool ConBDAnalista, bool ConBDPessoa, bool instanciaoutros)
+            : base(ConBDPessoa, instanciaoutros)
         {
             if (ConBDAnalista)
             {
-                this._analistadao = new AnalistaDAO();
+                this._analistadao = new AnalistasDAO();
             }
         }
         #endregion

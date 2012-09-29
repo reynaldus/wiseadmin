@@ -16,7 +16,7 @@ namespace WiseControlModel
             try
             {
                 parametros = new List<Parametro>();
-                parametros.Add(new Parametro("@CODIGO", codigo));
+                    
                 parametros.Add(new Parametro("@DESCR", descr));
                 parametros.Add(new Parametro("@DTAPONTAMENTO", dtapontamento));
                 parametros.Add(new Parametro("@OCORRENCIA", ocorrencia));

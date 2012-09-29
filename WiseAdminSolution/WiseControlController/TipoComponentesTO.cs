@@ -13,7 +13,9 @@ namespace WiseControlController
         #region "Atributos"
         private int _codigotpcomp;
         private string _nometpcomp;
+        
         private TipoComponentesDAO _dao;
+        
         #endregion
 
         #region "GETTERS E SETTER"

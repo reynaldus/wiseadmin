@@ -17,7 +17,9 @@ namespace WiseHelpController
         /// </summary>
         private int _codigo;
         private String _descricao;
+
         private AcoesAdmDAO _dao;
+        
         #endregion
         #region "GETTERS E SETTERS"
         public int Codigo

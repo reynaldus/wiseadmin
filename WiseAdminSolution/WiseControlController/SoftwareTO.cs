@@ -15,15 +15,17 @@ namespace WiseControlController
         private int _codigosw;
         private string _licenca;
         private string _nomesw;
-        private int _marcasw;
-        private int _categoria_sw;
         private SoftwareDAO _dao;
+
+        private MarcasTO _marcasw;
+        private CategoriasSwTO _categoriasw;
+        
 
         #endregion
 
         #region "GETTERS E SETTERS"
 
-        public int Codigosw
+        public int CodigoSw
         {
 
             get { return this._codigosw; }
@@ -37,25 +39,25 @@ namespace WiseControlController
             set { this._licenca = value; }
         }
 
-        public String Nomesw
+        public String NomeSw
         {
 
             get { return this._nomesw; }
             set { this._nomesw = value; }
         }
 
-        public int Marcasw
+        public MarcasTO MarcaSw
         {
 
             get { return this._marcasw; }
             set { this._marcasw = value; }
         }
 
-        public int Categoriasw
+        public CategoriasSwTO CategoriaSw
         {
 
-            get { return this._categoria_sw; }
-            set { this._categoria_sw = value; }
+            get { return this._categoriasw; }
+            set { this._categoriasw = value; }
         }
 
         #endregion
@@ -71,7 +73,7 @@ namespace WiseControlController
             {
                 lista_dados = new List<object>();
                 dt = new System.Data.DataTable();
-                dt = _dao.GerenciaSotware(this.Codigosw, this._licenca, this._nomesw, this._marcasw, this._categoria_sw, acao, ConnectionString);
+                dt = _dao.GerenciaSotware(this._codigosw, this._licenca, this._nomesw, this._marcasw.CodigoMarca, this._categoriasw.CodigoCatSw, acao, ConnectionString);
                 if (!(dt == null))
                 {
                     if (dt.Rows.Count > 0)
@@ -85,11 +87,20 @@ namespace WiseControlController
                             for (int x = 0; x < dt.Rows.Count; x++)
                             {
                                 SoftwareTO item = new SoftwareTO(false);
-                                item.Categoriasw = int.Parse(dt.Rows[x]["CODIGOSW"].ToString());
+                                item.CodigoSw = int.Parse(dt.Rows[x]["CODIGOSW"].ToString());
                                 item.Licenca = dt.Rows[x]["LICENCA"].ToString();
-                                item.Nomesw = dt.Rows[x]["NOMESW"].ToString();
-                                item.Marcasw = int.Parse(dt.Rows[x]["MARCASW"].ToString());
-                                item.Categoriasw = int.Parse(dt.Rows[x]["CATEGORIA_SW"].ToString());
+                                item.NomeSw = dt.Rows[x]["NOMESW"].ToString();
+                                
+                                //Marcas
+                                item._marcasw.CodigoMarca = int.Parse(dt.Rows[x]["CODIGOMARCA"].ToString());
+                                item._marcasw.EmailSuporte = dt.Rows[x]["EMAILSUPORTE"].ToString();
+                                item._marcasw.NomeMarca = dt.Rows[x]["NOMEMARCA"].ToString();
+
+                                //Categorias
+                                item._categoriasw.CodigoCatSw = int.Parse(dt.Rows[x]["CODIGO"].ToString());
+                                item._categoriasw.DescrCat = dt.Rows[x]["DESCRCAT"].ToString();
+
+                                
                                 lista_dados.Add(item);
 
 

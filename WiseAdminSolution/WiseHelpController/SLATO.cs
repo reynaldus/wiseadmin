@@ -12,15 +12,17 @@ namespace WiseHelpController
     public class SLATO:ControllerMaster.ControllerMaster
     {
         #region "Atributos"
-        private int _codigoSLA;
+        
+        private int _codigosla;
         private double _tempoatendimento;
         private SlaDAO _dao;
         #endregion
         #region "GETTERS E SETTERS"
+        
         public int CodigoSLA
         {
-            get { return this._codigoSLA; }
-            set { this._codigoSLA = value; }
+            get { return this._codigosla; }
+            set { this._codigosla = value; }
         }
         public double TempoAtendimento
         {
@@ -34,9 +36,10 @@ namespace WiseHelpController
         {
             try
             {
-                lista_dados = new List<object>();
+                lista_dados = new List<Object>();
                 dt = new DataTable();
-                dt = _dao.GerenciaSLA(this.CodigoSLA, this.TempoAtendimento, acao, ConnectionString);
+                dt = _dao.GerenciaSLA(this._codigosla, this._tempoatendimento, acao, ConnectionString);
+           
                 if (!(dt == null))
                 {
                     if (dt.Rows.Count > 0)

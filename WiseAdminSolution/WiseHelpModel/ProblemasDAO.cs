@@ -9,11 +9,11 @@ using DAOMaster;
 
 namespace WiseHelpModel
 {
-    public class ProblemasDAO:DAOMaster.DAOMaster
+    public class ProblemasDAO : DAOMaster.DAOMaster
     {
         #region "Métodos"
 
-        public DataTable GerenciaProblemas(int codigo, string descr, int sla, int tipoproblema, int acao, String ConnectionString) 
+        public DataTable GerenciaProblemas(int codigo, String descr, int sla, int tipoproblema, int acao, String ConnectionString)
         {
             try
             {
@@ -30,15 +30,15 @@ namespace WiseHelpModel
                 parametros.Add(p);
                 */
 
-                return  DAO.Execute(parametros, "SP_Gerencia_Problemas", ConnectionString, getTimeOut(acao));
-           
-                    
+                return DAO.Execute(parametros, "SP_Gerencia_Problemas", ConnectionString, DAOMaster.DAOMaster.getTimeOut(acao));
+
+
 
 
             }
             catch (Exception ex)
             {
-                
+
                 throw ex;
             }
         }

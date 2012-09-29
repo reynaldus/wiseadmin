@@ -10,3 +10,10 @@ C:\Users\Reynaldo\Desktop\wiseadmin\WiseAdminSolution\WiseControlModel\obj\Debug
 C:\Users\Reynaldo\Desktop\wiseadmin\WiseAdminSolution\WiseControlModel\obj\Debug\WiseControlModel.pdb
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseControlModel\bin\Debug\DAOMaster.dll
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseControlModel\bin\Debug\DAOMaster.pdb
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseControlModel\bin\Debug\WiseControlModel.dll
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseControlModel\bin\Debug\WiseControlModel.pdb
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseControlModel\bin\Debug\DAOMaster.dll
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseControlModel\bin\Debug\DAOMaster.pdb
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseControlModel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseControlModel\obj\Debug\WiseControlModel.dll
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseControlModel\obj\Debug\WiseControlModel.pdb

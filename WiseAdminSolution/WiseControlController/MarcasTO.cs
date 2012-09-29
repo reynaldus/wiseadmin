@@ -14,6 +14,7 @@ namespace WiseControlController
         private int _codigomarca;
         private string _emailsuporte;
         private string _nomemarca;
+        
         private MarcasDAO _dao;
         #endregion
 
@@ -60,9 +61,11 @@ namespace WiseControlController
                             for (int x = 0; x < dt.Rows.Count; x++)
                             {
                                 MarcasTO item = new MarcasTO(false);
+                                
                                 item.CodigoMarca = int.Parse(dt.Rows[x]["CODIGOMARCA"].ToString());
                                 item.EmailSuporte = dt.Rows[x]["EMAILSUPORTE"].ToString();
                                 item.NomeMarca = dt.Rows[x]["NOMEMARCA"].ToString();
+                          
                                 lista_dados.Add(item);
 
                             }

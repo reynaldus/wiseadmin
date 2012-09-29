@@ -3,3 +3,8 @@ C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseChatController\bin\D
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseChatController\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseChatController\obj\Debug\WiseChatController.dll
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseChatController\obj\Debug\WiseChatController.pdb
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseChatController\bin\Debug\WiseChatController.dll
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseChatController\bin\Debug\WiseChatController.pdb
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseChatController\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseChatController\obj\Debug\WiseChatController.dll
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseChatController\obj\Debug\WiseChatController.pdb

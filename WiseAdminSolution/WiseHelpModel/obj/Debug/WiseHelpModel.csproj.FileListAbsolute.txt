@@ -12,3 +12,10 @@ C:\Users\Reynaldo\Desktop\wiseadmin\WiseAdminSolution\WiseHelpModel\bin\Debug\DA
 C:\Users\Reynaldo\Desktop\wiseadmin\WiseAdminSolution\WiseHelpModel\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Reynaldo\Desktop\wiseadmin\WiseAdminSolution\WiseHelpModel\obj\Debug\WiseHelpModel.dll
 C:\Users\Reynaldo\Desktop\wiseadmin\WiseAdminSolution\WiseHelpModel\obj\Debug\WiseHelpModel.pdb
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseHelpModel\bin\Debug\WiseHelpModel.dll
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseHelpModel\bin\Debug\WiseHelpModel.pdb
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseHelpModel\bin\Debug\DAOMaster.dll
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseHelpModel\bin\Debug\DAOMaster.pdb
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseHelpModel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseHelpModel\obj\Debug\WiseHelpModel.dll
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseHelpModel\obj\Debug\WiseHelpModel.pdb

@@ -47,6 +47,7 @@
     <Compile Include="CategoriasSwDAO.cs" />
     <Compile Include="ComponentesDAO.cs" />
     <Compile Include="HardwareDAO.cs" />
+    <Compile Include="HistoricoAlteracaoDAO.cs" />
     <Compile Include="MarcasDAO.cs" />
     <Compile Include="ModelosDAO.cs" />
     <Compile Include="ReqSoftwareDAO.cs" />

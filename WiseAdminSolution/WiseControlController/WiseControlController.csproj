@@ -40,12 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApontamentosHwTO.cs" />
+    <Compile Include="ApontamentosTO.cs" />
     <Compile Include="CategoriasSwTO.cs" />
     <Compile Include="CategoriasTO.cs" />
+    <Compile Include="DepartamentoTO.cs" />
     <Compile Include="ModelosTO.cs" />
+    <Compile Include="PessoasTO.cs" />
     <Compile Include="SoftwareTO.cs" />
     <Compile Include="SistemaHwTO.cs" />
-    <Compile Include="RequisitoMinimosTO.cs" />
+    <Compile Include="RequisitosMinimosTO.cs" />
     <Compile Include="ReqSoftwareTO.cs" />
     <Compile Include="ReqComponentesTO.cs" />
     <Compile Include="MarcasTO.cs" />
@@ -71,6 +75,10 @@
     <ProjectReference Include="..\WiseControlModel\WiseControlModel.csproj">
       <Project>{F7930632-BDB8-445D-8181-68B77180857E}</Project>
       <Name>WiseControlModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WiseHelpController\WiseHelpController.csproj">
+      <Project>{D702BC20-E586-4B05-A172-4FA30855E2FE}</Project>
+      <Name>WiseHelpController</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

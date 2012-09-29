@@ -3,3 +3,8 @@ C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseRemoteController\bin
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseRemoteController\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseRemoteController\obj\Debug\WiseRemoteController.dll
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseRemoteController\obj\Debug\WiseRemoteController.pdb
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseRemoteController\bin\Debug\WiseRemoteController.dll
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseRemoteController\bin\Debug\WiseRemoteController.pdb
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseRemoteController\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseRemoteController\obj\Debug\WiseRemoteController.dll
+C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseRemoteController\obj\Debug\WiseRemoteController.pdb

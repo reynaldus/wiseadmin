@@ -10,17 +10,19 @@ namespace WiseHelpController
     public class AcoesAdmSLATO:ControllerMaster.ControllerMaster
     {
         #region "Atributos"
-        private int _codigoAcaoAdmSLA;
+        private int _codigoacaoadmsla;
+        private AcoesSlaDAO _dao;
+
         private AcoesAdmTO _acaoadm;
         private SLATO _sla;
-        private AcoesSlaDAO _dao;
+                
         #endregion
         
         #region "GETTERS E SETTERS"
         public int CodigoAcaoAdmSLA
         {
-            get { return this._codigoAcaoAdmSLA; }
-            set { this._codigoAcaoAdmSLA = value; }
+            get { return this._codigoacaoadmsla; }
+            set { this._codigoacaoadmsla = value; }
         }
         
         public AcoesAdmTO AcaoAdm
@@ -43,7 +45,10 @@ namespace WiseHelpController
             {
                 dt = new DataTable();
                 lista_dados = new List<object>();
-                dt = _dao.gerenciaAcoesSLA(this.CodigoAcaoAdmSLA, this.AcaoAdm.Codigo, this.Sla.CodigoSLA, acao, ConnectionString);
+                
+                dt = _dao.gerenciaAcoesSLA(this._codigoacaoadmsla, this._acaoadm.Codigo, this._sla.CodigoSLA, acao, ConnectionString);
+                
+                
                 if (!(dt == null))
                 {
                     if (dt.Rows.Count > 0)
@@ -57,11 +62,16 @@ namespace WiseHelpController
                             for (int x = 0; x < dt.Rows.Count; x++)
                             {
                                 AcoesAdmSLATO item = new AcoesAdmSLATO(false, true);
+
                                 item.CodigoAcaoAdmSLA = int.Parse(dt.Rows[x]["SLAACAOCODIGO"].ToString());
-                                item.Sla.CodigoSLA = int.Parse(dt.Rows[x]["SLACODIGO"].ToString());
-                                item.Sla.TempoAtendimento = double.Parse(dt.Rows[x]["SLATEMPO"].ToString());
+                                
+                                item.Sla.CodigoSLA = int.Parse(dt.Rows[x]["CODIGO"].ToString());
+                                item.Sla.TempoAtendimento = double.Parse(dt.Rows[x]["TEMPOATENDIMENTO"].ToString());
+                                
                                 item.AcaoAdm.Codigo = int.Parse(dt.Rows[x]["ACAOADMCODIGO"].ToString());
+
                                 item.AcaoAdm.Descricao = dt.Rows[x]["ACAO"].ToString();
+                                
                                 lista_dados.Add(item);
                             }
                         }

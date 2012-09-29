@@ -13,8 +13,11 @@ namespace WiseControlController
         #region "Atributos"
         private int _codigomodel;
         private string _descrmodel;
-        private int _marca;
         private ModelosDAO _dao;
+        
+        private MarcasTO _marca;
+
+        
         #endregion
 
         #region "GETTERS E SETTERS"
@@ -28,7 +31,7 @@ namespace WiseControlController
             get { return this._descrmodel; }
             set { this._descrmodel = value; }
         }
-        public int Marca 
+        public MarcasTO Marca 
         {
             get { return this._marca; }
             set { this._marca = value; }
@@ -43,7 +46,7 @@ namespace WiseControlController
             {
                 lista_dados = new List<object>();
                 dt = new System.Data.DataTable();
-                dt = _dao.GerenciaModelos(this._codigomodel, this._descrmodel, this._marca, acao, ConnectionString);
+                dt = _dao.GerenciaModelos(this._codigomodel, this._descrmodel, this._marca.CodigoMarca, acao, ConnectionString);
 
                 if (!(dt == null))
                 {
@@ -57,10 +60,15 @@ namespace WiseControlController
                         {
                             for (int x = 0; x < dt.Rows.Count; x++)
                             {
-                                ModelosTO item = new ModelosTO(false);
+                                ModelosTO item = new ModelosTO(false,true);
                                 item.CodigoModel = int.Parse(dt.Rows[x]["CODIGOMODEL"].ToString());
                                 item.DescModel = dt.Rows[x]["DESCRMODEL"].ToString();
-                                item.Marca = int.Parse(dt.Rows[x]["MARCA"].ToString());
+                                
+                                //MARCA
+                                item._marca.CodigoMarca = int.Parse(dt.Rows[x]["CODIGOMARCA"].ToString());
+                                item._marca.EmailSuporte = dt.Rows[x]["EMAILSUPORTE"].ToString();
+                                item._marca.NomeMarca = dt.Rows[x]["NOMEMARCA"].ToString();
+
                                 lista_dados.Add(item);
                                    
                                 
@@ -82,11 +90,19 @@ namespace WiseControlController
         #endregion
 
         #region "Construtores"
-        public ModelosTO(bool conbd)
+        public ModelosTO(bool conbd, bool instanciadependente)
         {
             try
             {
-                this._dao = new ModelosDAO();
+                if (conbd)
+                {
+                    this._dao = new ModelosDAO();   
+                }
+
+                if (instanciadependente)
+                {
+                    this._marca = new MarcasTO(false);     
+                }
 
             }
             catch (Exception ex)

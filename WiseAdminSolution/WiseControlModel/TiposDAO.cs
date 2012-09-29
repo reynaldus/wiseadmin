@@ -10,7 +10,7 @@ namespace WiseControlModel
 {
     public class TiposDAO:DAOMaster.DAOMaster
     {
-        #region
+        #region "Métodos"
 
         public DataTable GerenciaTipos(int codigotipo, string descrtipo, int categoria, int acao, String ConnectionString) {
             try

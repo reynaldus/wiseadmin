@@ -12,7 +12,8 @@ namespace WiseControlController
     {
         #region "Atributos"
         private int _codigocatsw;
-        private int _nomecatsw;
+        private string _nomecatsw;
+
         private CategoriasSwDAO _dao;
         #endregion
 
@@ -23,7 +24,7 @@ namespace WiseControlController
             set{this._codigocatsw = value;}
         }
 
-        public int NomeCatSw 
+        public string NomeCatSw 
         {
             get{return this._nomecatsw;}
             set{this._nomecatsw = value;}
@@ -32,13 +33,13 @@ namespace WiseControlController
 
         #region "Métodos"
 
-        public List<Object> gerenciaCategoriasSwTO(int acao, String ConnectionString)
+        public List<Object> GerenciaCategoriasSwTO(int acao, String ConnectionString)
         {
             try
             {
                 lista_dados = new List<object>();
                 dt = new System.Data.DataTable();
-                dt = _dao.GerenciaCategoriasSW(this.CodigoCatSw, this.NomeCatSw, acao, ConnectionString);
+                dt = _dao.GerenciaCategoriasSW(this._codigocatsw, this._nomecatsw, acao, ConnectionString);
 
                 if(!(dt == null))
                 {
@@ -54,7 +55,7 @@ namespace WiseControlController
                             {
                                 CategoriasSwTO item = new CategoriasSwTO(false);
                                 item.CodigoCatSw = int.Parse(dt.Rows[x]["CODIGOCATSW"].ToString());
-                                item.NomeCatSw = int.Parse(dt.Rows[x]["NOMECATSW"].ToString());
+                                item.NomeCatSw = dt.Rows[x]["NOMECATSW"].ToString();
                                 lista_dados.Add(item);
                             }
                         }
@@ -73,6 +74,7 @@ namespace WiseControlController
         #endregion
 
         #region "Construtores"
+        
         public CategoriasSwTO(bool conbd) 
         {
             if (conbd)
@@ -82,5 +84,7 @@ namespace WiseControlController
         }
 
         #endregion
+
+        
     }
 }
