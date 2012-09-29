@@ -98,7 +98,7 @@ namespace WiseControlController
 
                                 //Categorias
                                 item._categoriasw.CodigoCatSw = int.Parse(dt.Rows[x]["CODIGO"].ToString());
-                                item._categoriasw.DescrCat = dt.Rows[x]["DESCRCAT"].ToString();
+                                item._categoriasw.NomeCatSw = dt.Rows[x]["DESCRCAT"].ToString();
 
                                 
                                 lista_dados.Add(item);

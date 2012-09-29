@@ -39,7 +39,7 @@ namespace WiseControlController
             {
                 lista_dados = new List<object>();
                 dt = new System.Data.DataTable();
-                dt = _dao.GerenciaCategoriasSW(this._codigocatsw, this._nomecatsw, acao, ConnectionString);
+                dt = _dao.GerenciaCategoriasSW(this._codigocatsw,this._nomecatsw, acao, ConnectionString);
 
                 if(!(dt == null))
                 {

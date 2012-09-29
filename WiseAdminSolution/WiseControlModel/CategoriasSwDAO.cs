@@ -12,7 +12,7 @@ namespace WiseControlModel
     {
         #region "Métodos"
     
-        public DataTable GerenciaCategoriasSW(int codigocatsw, int nomecatsw, int acao, String ConnectionString)
+        public DataTable GerenciaCategoriasSW(int codigocatsw, String nomecatsw, int acao, String ConnectionString)
         {
             try
             {
