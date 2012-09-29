@@ -8,3 +8,8 @@ C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\ControllerMaster\bi
 C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\ControllerMaster\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\ControllerMaster\obj\Debug\ControllerMaster.dll
 C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\ControllerMaster\obj\Debug\ControllerMaster.pdb
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\ControllerMaster\bin\Debug\ControllerMaster.dll
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\ControllerMaster\bin\Debug\ControllerMaster.pdb
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\ControllerMaster\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\ControllerMaster\obj\Debug\ControllerMaster.dll
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\ControllerMaster\obj\Debug\ControllerMaster.pdb

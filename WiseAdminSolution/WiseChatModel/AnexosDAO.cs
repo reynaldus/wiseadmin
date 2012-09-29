@@ -18,7 +18,7 @@ namespace WiseChatModel
             try
             {
                 parametros = new List<Parametro>();
-                parametros.Add(new Parametro("",));
+                //parametros.Add(new Parametro("",));
 
                 return DAO.Execute(parametros, "SP_GERENCIA_ANEXOS", ConnectionString, DAOMaster.DAOMaster.getTimeOut(acao));
             }

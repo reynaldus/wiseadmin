@@ -13,3 +13,8 @@ C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatController\
 C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatController\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatController\obj\Debug\WiseChatController.dll
 C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatController\obj\Debug\WiseChatController.pdb
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatController\bin\Debug\WiseChatController.dll
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatController\bin\Debug\WiseChatController.pdb
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatController\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatController\obj\Debug\WiseChatController.dll
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatController\obj\Debug\WiseChatController.pdb

@@ -18,3 +18,13 @@ C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\Misc\obj\Debug\Gene
 C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\Misc\obj\Debug\Misc.dll
 C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\Misc\obj\Debug\Misc.xml
 C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\Misc\obj\Debug\Misc.pdb
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\Misc\bin\Debug\Misc.dll
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\Misc\bin\Debug\Misc.pdb
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\Misc\bin\Debug\Misc.xml
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\Misc\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\Misc\obj\Debug\Misc.Resources.resources
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\Misc\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\Misc\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\Misc\obj\Debug\Misc.dll
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\Misc\obj\Debug\Misc.xml
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\Misc\obj\Debug\Misc.pdb

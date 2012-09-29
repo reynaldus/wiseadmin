@@ -24,3 +24,10 @@ C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseControlModel\bi
 C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseControlModel\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseControlModel\obj\Debug\WiseControlModel.dll
 C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseControlModel\obj\Debug\WiseControlModel.pdb
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseControlModel\bin\Debug\WiseControlModel.dll
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseControlModel\bin\Debug\WiseControlModel.pdb
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseControlModel\bin\Debug\DAOMaster.dll
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseControlModel\bin\Debug\DAOMaster.pdb
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseControlModel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseControlModel\obj\Debug\WiseControlModel.dll
+C:\Users\Reynaldo\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseControlModel\obj\Debug\WiseControlModel.pdb
