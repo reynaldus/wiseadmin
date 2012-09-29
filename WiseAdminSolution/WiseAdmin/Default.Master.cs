@@ -20,7 +20,7 @@ namespace WiseAdmin
         public String CaminhoWiseRemote = "WiseRemote";
         public String CaminhoLogOut = "Logout.aspx";
         public String CaminhoWiseAdmin = "Default.aspx";
-        
+        public String DirPath = String.Empty;        
         
         public void CssClassChange( String Sistema) {
             try

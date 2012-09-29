@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Wise Admin - Logon" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WiseAdmin.Default1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <script type="text/javascript" src="scripts/ajax/ScriptMaster.js" ></script>
+    <script src="scripts/jquery-1.8.2.min.js" type="text/javascript"></script>
     <script src="scripts/jqueryui/js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
     <link href="scripts/jqueryui/css/cupertino/jquery-ui-1.8.23.custom.css" rel="stylesheet"
         type="text/css" />
