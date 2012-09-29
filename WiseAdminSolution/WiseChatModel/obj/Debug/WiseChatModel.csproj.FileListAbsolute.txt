@@ -5,3 +5,10 @@ C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseChatModel\obj\Debug\
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\WiseChatModel\obj\Debug\WiseChatModel.pdb
 C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseChatModel\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseChatModel\obj\Debug\WiseChatModel.dll
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatModel\bin\Debug\WiseChatModel.dll
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatModel\bin\Debug\WiseChatModel.pdb
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatModel\bin\Debug\DAOMaster.dll
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatModel\bin\Debug\DAOMaster.pdb
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatModel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatModel\obj\Debug\WiseChatModel.dll
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseChatModel\obj\Debug\WiseChatModel.pdb

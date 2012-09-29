@@ -29,3 +29,6 @@ C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseControlControll
 C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseControlController\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseControlController\obj\Debug\WiseControlController.dll
 C:\Users\Reynaldo\Desktop\versaoatualizada\WiseAdminSolution\WiseControlController\obj\Debug\WiseControlController.pdb
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseControlController\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseControlController\obj\Debug\WiseControlController.dll
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\WiseControlController\obj\Debug\WiseControlController.pdb

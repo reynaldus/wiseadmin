@@ -55,7 +55,7 @@ namespace WiseControlController
             {
                 lista_dados = new List<Object>();
                 dt = new System.Data.DataTable();
-                dt = _dao.GerenciaComponentes(this._codigocomp, this._descrcomp, this._modelo.CodigoModel, this._tipocomp.CodigoTpComp, acao, ConnectionString);
+                dt = _dao.GerenciaComponentes(this._codigocomp, this._descrcomp, this._modelo.CodigoModel, this._tipocomp.NomeTpComp, acao, ConnectionString);
                 
                 if (!(dt == null))
                 {

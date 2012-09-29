@@ -3,3 +3,8 @@ C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\ControllerMaster\bin\Deb
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\ControllerMaster\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\ControllerMaster\obj\Debug\ControllerMaster.dll
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\ControllerMaster\obj\Debug\ControllerMaster.pdb
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\ControllerMaster\bin\Debug\ControllerMaster.dll
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\ControllerMaster\bin\Debug\ControllerMaster.pdb
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\ControllerMaster\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\ControllerMaster\obj\Debug\ControllerMaster.dll
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\ControllerMaster\obj\Debug\ControllerMaster.pdb

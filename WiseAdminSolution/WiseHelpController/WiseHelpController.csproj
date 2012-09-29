@@ -46,14 +46,14 @@
     <Compile Include="ApontamentosTO.cs" />
     <Compile Include="AnalistaTO.cs" />
     <Compile Include="OcorrenciasTO.cs" />
+    <Compile Include="PessoaTO.cs" />
     <Compile Include="ProblemasTO.cs" />
     <Compile Include="StatusTO.cs" />
-    <Compile Include="UsuariosTO.cs" />
     <Compile Include="TipoProblemaTO.cs" />
     <Compile Include="DepartamentoTO.cs" />
-    <Compile Include="PessoasTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SLATO.cs" />
+    <Compile Include="UsuarioTO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ControllerMaster\ControllerMaster.csproj">

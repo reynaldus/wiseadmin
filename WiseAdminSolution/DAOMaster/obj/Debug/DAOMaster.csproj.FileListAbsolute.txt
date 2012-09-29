@@ -3,3 +3,8 @@ C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\DAOMaster\bin\Debug\DAOM
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\DAOMaster\bin\Debug\DAOMaster.pdb
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\DAOMaster\obj\Debug\DAOMaster.dll
 C:\Users\Shikow\Desktop\TCC\WiseAdmin\WiseAdminSolution\DAOMaster\obj\Debug\DAOMaster.pdb
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\DAOMaster\bin\Debug\DAOMaster.dll
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\DAOMaster\bin\Debug\DAOMaster.pdb
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\DAOMaster\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\DAOMaster\obj\Debug\DAOMaster.dll
+C:\Users\Shikow\Documents\GitHub\wiseadmin\WiseAdminSolution\DAOMaster\obj\Debug\DAOMaster.pdb

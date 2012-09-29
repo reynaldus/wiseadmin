@@ -45,8 +45,9 @@
     <Compile Include="CategoriasSwTO.cs" />
     <Compile Include="CategoriasTO.cs" />
     <Compile Include="DepartamentoTO.cs" />
+    <Compile Include="HistoricoAlteracaoTO.cs" />
     <Compile Include="ModelosTO.cs" />
-    <Compile Include="PessoasTO.cs" />
+    <Compile Include="RequisitoMinimosTO.cs" />
     <Compile Include="SoftwareTO.cs" />
     <Compile Include="SistemaHwTO.cs" />
     <Compile Include="RequisitosMinimosTO.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoComponentesTO.cs" />
     <Compile Include="TiposTO.cs" />
+    <Compile Include="UsuariosHwTO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ControllerMaster\ControllerMaster.csproj">

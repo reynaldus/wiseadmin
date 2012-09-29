@@ -7,7 +7,7 @@ using WiseHelpModel;
 using ControllerMaster;
 namespace WiseHelpController
 {
-    public class AnalistasTO : PessoasTO
+    public class AnalistasTO : PessoaTO
     {
         #region "Atributos"
         private int _codigoanalista;

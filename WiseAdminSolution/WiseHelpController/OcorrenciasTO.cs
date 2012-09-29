@@ -23,7 +23,7 @@ namespace WiseHelpController
         //Herança
         private StatusTO _status;
         private ProblemasTO _problemas;
-        private UsuariosTO _usuario;
+        private UsuarioTO _usuario;
         
         #endregion
 
@@ -76,7 +76,7 @@ namespace WiseHelpController
         
         }
 
-        public UsuariosTO Usuario
+        public UsuarioTO Usuario
         {
             get { return this._usuario; }
             set { this._usuario = value; }
@@ -166,7 +166,7 @@ namespace WiseHelpController
             {
                 this._status = new StatusTO(false);
                 this._problemas = new ProblemasTO(false, true);
-                this._usuario = new UsuariosTO(true, true, true);
+                this._usuario = new UsuarioTO(true, true, true);
             }
             
             

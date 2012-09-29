@@ -7,6 +7,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 using ControllerMaster;
 using WiseControlController;
+using WiseHelpController;
 
 namespace WiseControlController
 {
@@ -18,8 +19,8 @@ namespace WiseControlController
         private String _descr;
         private DateTime _dtapontamento;
 
-        private OcorrenciaTO _ocorrencia;
-        private AnalistaTO _analista;
+        private OcorrenciasTO _ocorrencia;
+        private AnalistasTO _analista;
 
         #endregion
 
