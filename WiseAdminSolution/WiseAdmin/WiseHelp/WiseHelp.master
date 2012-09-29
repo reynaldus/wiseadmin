@@ -6,11 +6,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <div class=" menuHelp boxAzul">
 <h1 class="fonteH1">Help Menu</h1>
-<ul  style="width:230px">
-    <li><a href="#" class="boxAzul2">Meus Chamados</a></li>
-    <li><a href="#" class="boxAzul2">Chamados do Departamento</a></li>
-    <li><a href="#" class="boxAzul2">Abertura de Solicitações</a></li>
-    
+<ul  style="width:240px;margin-left:4px;">
+    <li><a href="#" class="boxAzul2 BtnWiseHelp">Chamados em Aberto</a></li>
+    <li><a href="#" class="boxAzul2 BtnWiseHelp">Chamados do Departamento</a></li>
+    <li><a href="#" class="boxAzul2 BtnWiseHelp">Abertura de Solicitações</a></li>
+    <li><a href="#" class="boxAzul2 BtnWiseHelp">Minhas Solicitações</a></li>
+    <li><a href="#" class="boxAzul2 BtnWiseHelp">Relatórios</a></li>
 
 
 </ul>

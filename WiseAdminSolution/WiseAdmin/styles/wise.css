@@ -17,6 +17,7 @@
     -webkit-text-fill-color: transparent;
     padding-left:5px;
     font-size:70px;
+    
 }
 
 .cabecalho{
@@ -85,13 +86,16 @@ width:1050px;
     -moz-border-radius-topright: 15px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    font-size:18px;
+    
     font-family:Calibri;
-    color:Blue;
+   
     background: #6fb2e5;
     box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
     -o-box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
     -webkit-box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
     -moz-box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
+    
 }
 
 .fonteH1{

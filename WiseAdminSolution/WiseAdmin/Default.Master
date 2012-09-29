@@ -10,7 +10,7 @@
         <link href="styles/menu.css" rel="Stylesheet" />
             <link href="styles/botoes.css" rel="Stylesheet" />
                 <link href="styles/divs.css" rel="Stylesheet" />
-    <script src="scripts/jquery-1.8.2.min.js" type="text/javascript"></script>
+    
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
