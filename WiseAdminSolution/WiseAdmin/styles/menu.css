@@ -7,7 +7,6 @@
 
 #bsMenu ul{
 	padding:0;
-    width:900px;
 }
 
 #bsMenu li{
@@ -28,7 +27,7 @@
 	display:block;
 	width: 100px;
     height:29px;
-	
+	margin: 0 5px 0 5px;
 }
 .menuHelp a{
     
@@ -37,20 +36,10 @@
     color:White;
     display:block;
     text-align:center;
-    text-shadow: 0 1px Black;
-        border-top-left-radius:0px;
-    border-top-right-radius:0px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
     font-family:Calibri;
-
-    font-weight:bolder; 
-}
-.BtnWiseHelp{
-    background-color:#4682B4;
-
-}
-.BtnWiseHelp:hover{
-    background-color:Blue;
-
+    font-weight:bolder;
 }
 .menuHelp li{
         list-style:none;    
